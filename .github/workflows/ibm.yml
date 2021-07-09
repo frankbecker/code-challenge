@@ -22,7 +22,7 @@ env:
   IMAGE_NAME: iks-test
   IKS_CLUSTER: c3js6g9d02cr6s0bg8r0
   DEPLOYMENT_NAME: iks-test
-  PORT: 9000
+  PORT: 3000
 
 jobs:
   setup-build-publish-deploy:
@@ -53,6 +53,7 @@ jobs:
     # Build the Docker image
     - name: Build with Docker
       run: |
+        cd ./frontend
         docker build -t "$REGISTRY_HOSTNAME"/"$ICR_NAMESPACE"/"$IMAGE_NAME":"$GITHUB_SHA" \
           --build-arg GITHUB_SHA="$GITHUB_SHA" \
           --build-arg GITHUB_REF="$GITHUB_REF" .
