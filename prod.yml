@@ -1,0 +1,14 @@
+version: "3.8"
+services:
+  react-app:
+    build: ./frontend
+    ports:
+      - "9000:3000"
+  api-server:
+    build:
+      context: ./api
+      target: production
+    command: npm run start:dev
+  mongo:
+    volumes:
+      - ./database/data:/data/db

@@ -1,0 +1,4 @@
+# Ignore artifacts: npx prettier --write . or npx prettier --write src
+build
+coverage
+node_modules

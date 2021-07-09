@@ -1,0 +1,18 @@
+version: "3.8"
+services:
+  react-app:
+    build: ./frontend
+    ports:
+      - "9000:3000"
+    volumes:
+      - ./frontend/src:/app/src
+  api-server:
+    build:
+      context: ./api
+      target: development
+    command: npm run start:dev
+    volumes:
+      - ./api:/usr/src/app
+  mongo:
+    volumes:
+      - ./database/data:/data/db

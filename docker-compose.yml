@@ -1,0 +1,27 @@
+version: "3.8"
+services:
+  react-app:
+    container_name: react
+    ports:
+      - "9000:3000"
+    networks:
+      - todo-app
+  api-server:
+    container_name: api
+    ports:
+      - "9001:3000"
+    networks:
+      - todo-app
+    depends_on:
+      - mongo
+  mongo:
+    image: mongo
+    container_name: mongodatabase
+    ports:
+      - 27017:27017
+    networks:
+      - todo-app
+
+networks:
+  todo-app:
+    driver: bridge
