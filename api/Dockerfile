@@ -13,5 +13,5 @@ WORKDIR /usr/src/app
 COPY package.json ./
 RUN npm install --only=production
 COPY . .
-COPY --from=development /usr/src/app/
+COPY --from=development /usr/src/app/ ./
 CMD ["node","app/dist/main"]
