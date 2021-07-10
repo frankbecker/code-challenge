@@ -74,4 +74,4 @@ jobs:
         kubectl create service loadbalancer $DEPLOYMENT_NAME --tcp=80:$PORT --dry-run -o yaml > service.yaml
         kubectl apply -f service.yaml
         kubectl get services -o wide
-        kubectl get services my-service
+        kubectl get node –output ‘jsonpath={.items[0].status.addresses[1].address}’
