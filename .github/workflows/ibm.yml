@@ -65,13 +65,13 @@ jobs:
     - name: Test FrontEnd code
       run: |
         docker run --rm \
-          "$REGISTRY_HOSTNAME"/"$ICR_NAMESPACE"/"$FRONTEND_IMAGE_NAME":"$GITHUB_SHA" \
+          "$REGISTRY_HOSTNAME"/"$ICR_NAMESPACE"/"$FRONTEND_IMAGE_NAME":"$GITHUB_SHA"-frontend \
           npm run test:ci
 
     # Push the FrontEnd image to IBM Container Registry
     - name: Push the FrontEnd image to ICR
       run: |
-        docker push $REGISTRY_HOSTNAME/$ICR_NAMESPACE/$FRONTEND_IMAGE_NAME:$GITHUB_SHA
+        docker push $REGISTRY_HOSTNAME/$ICR_NAMESPACE/$FRONTEND_IMAGE_NAME:$GITHUB_SHA-frontend
 
     # Deploy the FrontEnd Docker image to the IKS cluster
     - name: Deploy FrontEnd to IKS
@@ -98,13 +98,13 @@ jobs:
     - name: Test API code
       run: |
         docker run --rm \
-          "$REGISTRY_HOSTNAME"/"$ICR_NAMESPACE"/"$API_IMAGE_NAME":"$GITHUB_SHA" \
+          "$REGISTRY_HOSTNAME"/"$ICR_NAMESPACE"/"$API_IMAGE_NAME":"$GITHUB_SHA"-api \
           npm run test
 
     # Push the API image to IBM Container Registry
     - name: Push the API image to ICR
       run: |
-        docker push $REGISTRY_HOSTNAME/$ICR_NAMESPACE/$API_IMAGE_NAME:$GITHUB_SHA
+        docker push $REGISTRY_HOSTNAME/$ICR_NAMESPACE/$API_IMAGE_NAME:$GITHUB_SHA-api
 
     # Deploy the API Docker image to the IKS cluster
     - name: Deploy API to IKS
