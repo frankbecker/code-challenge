@@ -58,6 +58,14 @@ jobs:
           --build-arg GITHUB_SHA="$GITHUB_SHA" \
           --build-arg GITHUB_REF="$GITHUB_REF" .
 
+
+    # Test code
+    - name: Test code
+      run: |
+        docker run --rm \
+          "$REGISTRY_HOSTNAME"/"$ICR_NAMESPACE"/"$IMAGE_NAME":"$GITHUB_SHA" \
+          npm run test
+
     # Push the image to IBM Container Registry
     - name: Push the image to ICR
       run: |
@@ -74,4 +82,3 @@ jobs:
         kubectl create service loadbalancer $DEPLOYMENT_NAME --tcp=80:$PORT --dry-run -o yaml > service.yaml
         kubectl apply -f service.yaml
         kubectl get services -o wide
-        kubectl get node –output ‘jsonpath={.items[0].status.addresses[1].address}’
