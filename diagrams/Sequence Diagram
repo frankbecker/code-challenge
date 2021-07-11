@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2021-07-11T03:24:38.554Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.212 Safari/537.36" etag="JaqSREk4Y2WdH1Nk62RB" version="14.8.5" type="github" pages="5">
+<mxfile host="app.diagrams.net" modified="2021-07-11T15:21:23.586Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.212 Safari/537.36" etag="lWHv6ekGjqd3B7GYUaPO" version="14.8.5" type="github" pages="5">
   <diagram id="RIMDfDggIjjKtn-3Q86f" name="User Registration">
     <mxGraphModel dx="1426" dy="826" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
@@ -183,7 +183,7 @@
         <mxCell id="oi_PMgpeUt7Ur_Btj-Sw-18" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;" parent="oi_PMgpeUt7Ur_Btj-Sw-17" vertex="1">
           <mxGeometry x="45" y="70" width="10" height="570" as="geometry" />
         </mxCell>
-        <mxCell id="k_LL8QjUHECE7jFxUb_E-5" value="store access_token&amp;nbsp;&lt;br&gt;in cookies" style="edgeStyle=orthogonalEdgeStyle;html=1;align=left;spacingLeft=2;endArrow=block;rounded=0;entryX=1;entryY=0;" parent="oi_PMgpeUt7Ur_Btj-Sw-17" edge="1">
+        <mxCell id="k_LL8QjUHECE7jFxUb_E-5" value="store access_token&amp;nbsp;&lt;br&gt;in cookies or local storage" style="edgeStyle=orthogonalEdgeStyle;html=1;align=left;spacingLeft=2;endArrow=block;rounded=0;entryX=1;entryY=0;" parent="oi_PMgpeUt7Ur_Btj-Sw-17" edge="1">
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="55" y="510" as="sourcePoint" />
             <Array as="points">
