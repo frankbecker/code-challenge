@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2021-07-10T23:35:55.920Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.212 Safari/537.36" etag="LsoUmsWTcwcq_lwKOE2I" version="14.8.5" type="github" pages="4">
+<mxfile host="app.diagrams.net" modified="2021-07-11T03:24:38.554Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.212 Safari/537.36" etag="JaqSREk4Y2WdH1Nk62RB" version="14.8.5" type="github" pages="5">
   <diagram id="RIMDfDggIjjKtn-3Q86f" name="User Registration">
     <mxGraphModel dx="1426" dy="826" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
@@ -394,6 +394,107 @@
         <mxCell id="aAy1jkcjwCiezy6otNia-2" value="profile data" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;exitX=0;exitY=0.95;" parent="qrORzZnYXjaf_FNjrP86-1" source="aAy1jkcjwCiezy6otNia-0" target="qrORzZnYXjaf_FNjrP86-5" edge="1">
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="350" y="356" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="4KGQhI629reLG_PVtU10" name="New ToDo">
+    <mxGraphModel dx="1426" dy="826" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="lD1BIBEVnhD5gDZIRjJw-0" />
+        <mxCell id="lD1BIBEVnhD5gDZIRjJw-1" parent="lD1BIBEVnhD5gDZIRjJw-0" />
+        <mxCell id="lD1BIBEVnhD5gDZIRjJw-2" value="&lt;b&gt;New ToDo&lt;/b&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;" vertex="1" parent="lD1BIBEVnhD5gDZIRjJw-1">
+          <mxGeometry x="105" y="30" width="70" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="lD1BIBEVnhD5gDZIRjJw-3" value="Web Browser" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;collapsible=0;recursiveResize=0;outlineConnect=0;fillColor=#ffe6cc;strokeColor=#d79b00;" vertex="1" parent="lD1BIBEVnhD5gDZIRjJw-1">
+          <mxGeometry x="110" y="60" width="100" height="420" as="geometry" />
+        </mxCell>
+        <mxCell id="lD1BIBEVnhD5gDZIRjJw-4" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;" vertex="1" parent="lD1BIBEVnhD5gDZIRjJw-3">
+          <mxGeometry x="45" y="70" width="10" height="350" as="geometry" />
+        </mxCell>
+        <mxCell id="lD1BIBEVnhD5gDZIRjJw-5" value="display new ToDo to the user" style="edgeStyle=orthogonalEdgeStyle;html=1;align=left;spacingLeft=2;endArrow=block;rounded=0;entryX=1;entryY=0;" edge="1" parent="lD1BIBEVnhD5gDZIRjJw-3">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="55" y="390" as="sourcePoint" />
+            <Array as="points">
+              <mxPoint x="85" y="390" />
+            </Array>
+            <mxPoint x="60" y="410" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="lD1BIBEVnhD5gDZIRjJw-6" value="API" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;collapsible=0;recursiveResize=0;outlineConnect=0;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="lD1BIBEVnhD5gDZIRjJw-1">
+          <mxGeometry x="300" y="60" width="100" height="420" as="geometry" />
+        </mxCell>
+        <mxCell id="lD1BIBEVnhD5gDZIRjJw-7" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;" vertex="1" parent="lD1BIBEVnhD5gDZIRjJw-6">
+          <mxGeometry x="45" y="105" width="10" height="275" as="geometry" />
+        </mxCell>
+        <mxCell id="lD1BIBEVnhD5gDZIRjJw-8" value="get user id from req.user.id&lt;br&gt;This value is set by Passport" style="edgeStyle=orthogonalEdgeStyle;html=1;align=left;spacingLeft=2;endArrow=block;rounded=0;entryX=1;entryY=0;" edge="1" parent="lD1BIBEVnhD5gDZIRjJw-6">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="55" y="220" as="sourcePoint" />
+            <Array as="points">
+              <mxPoint x="85" y="220" />
+            </Array>
+            <mxPoint x="60" y="240" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="lD1BIBEVnhD5gDZIRjJw-9" value="&lt;b&gt;POST /todo&lt;br&gt;&lt;/b&gt;payload&lt;br&gt;&quot;Authorization&quot; : &quot;Bearer &amp;lt;JWT&amp;gt;&quot;" style="html=1;verticalAlign=bottom;endArrow=block;entryX=0;entryY=0;" edge="1" parent="lD1BIBEVnhD5gDZIRjJw-1" source="lD1BIBEVnhD5gDZIRjJw-3" target="lD1BIBEVnhD5gDZIRjJw-7">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="170" y="130" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="lD1BIBEVnhD5gDZIRjJw-10" value="&lt;b&gt;HTTP 200&lt;/b&gt;&lt;br&gt;new ToDo id" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;exitX=0;exitY=0.95;" edge="1" parent="lD1BIBEVnhD5gDZIRjJw-1" source="lD1BIBEVnhD5gDZIRjJw-7" target="lD1BIBEVnhD5gDZIRjJw-3">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="159.5" y="475.4999999999993" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="lD1BIBEVnhD5gDZIRjJw-11" value="validate payload" style="edgeStyle=orthogonalEdgeStyle;html=1;align=left;spacingLeft=2;endArrow=block;rounded=0;entryX=1;entryY=0;" edge="1" parent="lD1BIBEVnhD5gDZIRjJw-1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="356" y="240" as="sourcePoint" />
+            <Array as="points">
+              <mxPoint x="386" y="240" />
+            </Array>
+            <mxPoint x="361" y="260" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="lD1BIBEVnhD5gDZIRjJw-12" value="Passport&lt;br&gt;Middleware" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;collapsible=0;recursiveResize=0;outlineConnect=0;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="lD1BIBEVnhD5gDZIRjJw-1">
+          <mxGeometry x="480" y="60" width="100" height="420" as="geometry" />
+        </mxCell>
+        <mxCell id="lD1BIBEVnhD5gDZIRjJw-13" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;" vertex="1" parent="lD1BIBEVnhD5gDZIRjJw-12">
+          <mxGeometry x="45" y="105" width="10" height="55" as="geometry" />
+        </mxCell>
+        <mxCell id="lD1BIBEVnhD5gDZIRjJw-14" value="&lt;span style=&quot;text-align: left&quot;&gt;passport middleware will&lt;/span&gt;&lt;br style=&quot;text-align: left&quot;&gt;&lt;span style=&quot;text-align: left&quot;&gt;handle the token and&lt;/span&gt;&lt;br style=&quot;text-align: left&quot;&gt;&lt;span style=&quot;text-align: left&quot;&gt;set user values in req.user&lt;/span&gt;" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;exitX=0;exitY=0.95;" edge="1" parent="lD1BIBEVnhD5gDZIRjJw-1" source="lD1BIBEVnhD5gDZIRjJw-13" target="lD1BIBEVnhD5gDZIRjJw-6">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="455" y="241" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="lD1BIBEVnhD5gDZIRjJw-15" value="authenticate token &amp;lt;JWT&amp;gt;" style="html=1;verticalAlign=bottom;endArrow=block;entryX=0;entryY=0;" edge="1" parent="lD1BIBEVnhD5gDZIRjJw-1" source="lD1BIBEVnhD5gDZIRjJw-6" target="lD1BIBEVnhD5gDZIRjJw-13">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="455" y="165" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="lD1BIBEVnhD5gDZIRjJw-16" value="Database" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;collapsible=0;recursiveResize=0;outlineConnect=0;fillColor=#e1d5e7;strokeColor=#9673a6;" vertex="1" parent="lD1BIBEVnhD5gDZIRjJw-1">
+          <mxGeometry x="640" y="60" width="100" height="420" as="geometry" />
+        </mxCell>
+        <mxCell id="lD1BIBEVnhD5gDZIRjJw-17" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;" vertex="1" parent="lD1BIBEVnhD5gDZIRjJw-16">
+          <mxGeometry x="45" y="280" width="10" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="lD1BIBEVnhD5gDZIRjJw-18" value="&lt;span style=&quot;text-align: left&quot;&gt;create new ToDo for current user id&lt;/span&gt;" style="html=1;verticalAlign=bottom;endArrow=block;entryX=0;entryY=0;" edge="1" parent="lD1BIBEVnhD5gDZIRjJw-1" source="lD1BIBEVnhD5gDZIRjJw-6" target="lD1BIBEVnhD5gDZIRjJw-17">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="615" y="280" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="lD1BIBEVnhD5gDZIRjJw-19" value="success" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;exitX=0;exitY=0.95;" edge="1" parent="lD1BIBEVnhD5gDZIRjJw-1" source="lD1BIBEVnhD5gDZIRjJw-17" target="lD1BIBEVnhD5gDZIRjJw-6">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="350" y="356" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="lD1BIBEVnhD5gDZIRjJw-20" value="create successful response&lt;br&gt;with new ToDo id" style="edgeStyle=orthogonalEdgeStyle;html=1;align=left;spacingLeft=2;endArrow=block;rounded=0;entryX=1;entryY=0;" edge="1" parent="lD1BIBEVnhD5gDZIRjJw-1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="350" y="404" as="sourcePoint" />
+            <Array as="points">
+              <mxPoint x="380" y="404" />
+            </Array>
+            <mxPoint x="355" y="424" as="targetPoint" />
           </mxGeometry>
         </mxCell>
       </root>
