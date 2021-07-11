@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2021-07-11T15:37:32.996Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.212 Safari/537.36" etag="jB0aPkOYyGUoSa90UYuj" version="14.8.5" type="github" pages="5">
+<mxfile host="app.diagrams.net" modified="2021-07-11T15:38:48.706Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.212 Safari/537.36" etag="ETaeMbJkb4nwO6ZgfrAJ" version="14.8.5" type="github" pages="5">
   <diagram id="RIMDfDggIjjKtn-3Q86f" name="User Registration">
     <mxGraphModel dx="1426" dy="826" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
@@ -283,7 +283,7 @@
             <mxPoint x="370" y="520" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="woylHwL-TNQ5k6ky01ac-0" value="&lt;b&gt;GET /user-profile&lt;/b&gt;&lt;br&gt;&quot;Authorization&quot; : &quot;Bearer &amp;lt;JWT&amp;gt;&quot;" style="html=1;verticalAlign=bottom;endArrow=block;entryX=0;entryY=0;" parent="m3VYTza6pCIOUKfHfyl0-1" edge="1">
+        <mxCell id="woylHwL-TNQ5k6ky01ac-0" value="&lt;b&gt;GET /todos&lt;/b&gt;&lt;br&gt;&quot;Authorization&quot; : &quot;Bearer &amp;lt;JWT&amp;gt;&quot;" style="html=1;verticalAlign=bottom;endArrow=block;entryX=0;entryY=0;" parent="m3VYTza6pCIOUKfHfyl0-1" edge="1">
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="159.5" y="640" as="sourcePoint" />
             <mxPoint x="355" y="640.0000000000005" as="targetPoint" />
@@ -292,7 +292,7 @@
         <mxCell id="woylHwL-TNQ5k6ky01ac-1" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;" parent="m3VYTza6pCIOUKfHfyl0-1" vertex="1">
           <mxGeometry x="355" y="640" width="10" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="woylHwL-TNQ5k6ky01ac-3" value="&lt;b&gt;HTTP 200&lt;/b&gt;&lt;br&gt;user profile data with &lt;br&gt;edit permission" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;exitX=0;exitY=0.95;" parent="m3VYTza6pCIOUKfHfyl0-1" source="woylHwL-TNQ5k6ky01ac-1" target="oi_PMgpeUt7Ur_Btj-Sw-18" edge="1">
+        <mxCell id="woylHwL-TNQ5k6ky01ac-3" value="&lt;b&gt;HTTP 200&lt;/b&gt;&lt;br&gt;list of todos" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;exitX=0;exitY=0.95;" parent="m3VYTza6pCIOUKfHfyl0-1" source="woylHwL-TNQ5k6ky01ac-1" target="oi_PMgpeUt7Ur_Btj-Sw-18" edge="1">
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="160" y="636" as="targetPoint" />
           </mxGeometry>
