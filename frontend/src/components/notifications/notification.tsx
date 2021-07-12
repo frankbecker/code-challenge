@@ -1,28 +1,29 @@
-import React from "react";
-import classes from "./notification.module.css";
+import { makeStyles } from '@material-ui/core/styles';
+import { Alert, Color } from '@material-ui/lab';
 
 type NotificationProps = {
   title: string;
   message: string;
-  status: string;
+  status: Color;
 };
+
+const useStyles = makeStyles((theme) => ({
+  root: {
+    width: '100%',
+    '& > * + *': {
+      marginTop: theme.spacing(2),
+    },
+  },
+}));
+
 const Notifications = (props: NotificationProps) => {
-  let specialClasses = "";
-
-  if (props.status === "error") {
-    specialClasses = classes.error;
-  }
-  if (props.status === "success") {
-    specialClasses = classes.success;
-  }
-
-  const cssClasses = `${classes.notification} ${specialClasses}`;
-
+  const classes = useStyles();
   return (
-    <section className={cssClasses}>
-      <h2>{props.title}</h2>
-      <p>{props.message}</p>
-    </section>
+    <div className={classes.root}>
+      <Alert variant="filled" severity={props.status}>
+        {props.title} — <strong>{props.message}</strong>
+      </Alert>
+    </div>
   );
 };
 

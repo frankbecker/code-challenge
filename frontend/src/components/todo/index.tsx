@@ -1,3 +1,13 @@
+import {
+  ListItem,
+  Checkbox,
+  IconButton,
+  ListItemText
+} from "@material-ui/core";
+import DeleteOutlined from "@material-ui/icons/DeleteOutline";
+import EditIcon from '@material-ui/icons/Edit';
+import ListItemIcon from '@material-ui/core/ListItemIcon';
+
 import { ITodo } from "../../types";
 import { useDispatch } from "react-redux";
 import { deleteTodo, updateTodo } from "../../store/todos-actions";
@@ -18,6 +28,7 @@ const TodoComp = (props: Props) => {
     dispatch(deleteTodo(props.todo.id));
   };
   const editHandler = () => {
+    console.log('Edit handler')
     setEdit(!edit);
     setTodotitle(props.todo.title);
   };
@@ -35,40 +46,58 @@ const TodoComp = (props: Props) => {
     setTodotitle("");
   };
 
+  // return (
+  //   <li>
+  //     <span>
+  //       {edit ? (
+  //         <input type="text" value={todotitle} onChange={handleChange} />
+  //       ) : (
+  //         props.todo.title
+  //       )}
+  //     </span>
+  //     <span>
+  //       <input
+  //         type="checkbox"
+  //         checked={props.todo.completed}
+  //         onChange={completeHandler}
+  //       />
+  //     </span>
+  //     <span>
+  //       {edit ? (
+  //         <>
+  //           <button onClick={updateHandler}>Update</button>
+  //           <button
+  //             onClick={() => {
+  //               setEdit(false);
+  //             }}
+  //           >
+  //             Cancel
+  //           </button>
+  //         </>
+  //       ) : (
+  //         <button onClick={editHandler}>Edit</button>
+  //       )}{" "}
+  //       <button onClick={deleteHandler}>X</button>
+  //     </span>
+  //   </li>
+  // );  
+
   return (
-    <li>
-      <span>
-        {edit ? (
-          <input type="text" value={todotitle} onChange={handleChange} />
-        ) : (
-          props.todo.title
-        )}
-      </span>
-      <span>
-        <input
-          type="checkbox"
-          checked={props.todo.completed}
-          onChange={completeHandler}
-        />
-      </span>
-      <span>
-        {edit ? (
-          <>
-            <button onClick={updateHandler}>Update</button>
-            <button
-              onClick={() => {
-                setEdit(false);
-              }}
-            >
-              Cancel
-            </button>
-          </>
-        ) : (
-          <button onClick={editHandler}>Edit</button>
-        )}{" "}
-        <button onClick={deleteHandler}>X</button>
-      </span>
-    </li>
+    <ListItem divider={true}>
+      <Checkbox checked={props.todo.completed} onChange={completeHandler} disableRipple />
+      <ListItemText primary={props.todo.title} />
+      <ListItemIcon>
+        <IconButton aria-label="Edit Todo" onClick={editHandler}>
+          <EditIcon />
+        </IconButton>
+      </ListItemIcon>
+
+      <ListItemIcon>
+        <IconButton aria-label="Delete Todo" onClick={deleteHandler}>
+          <DeleteOutlined />
+        </IconButton>
+      </ListItemIcon>
+    </ListItem>
   );
 };
 
