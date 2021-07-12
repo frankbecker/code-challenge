@@ -27,26 +27,6 @@ const TodoFormComp = () => {
 
   return (
     <form action="" className="" onSubmit={formSubmitHandler}>
-      {/* <input
-        type="text"
-        name="title"
-        placeholder="Task..."
-        value={title}
-        onChange={handleChange}
-        autoComplete="off"
-      /> */}
-      {/* <TextField id="standard-basic"
-        label="Standard"
-        type="text"
-        name="title"
-        placeholder="Task..."
-        value={title}
-        onChange={handleChange}
-        autoComplete="off" /> */}
-      {/* <input type="button" value="Add todo" onClick={submitHandler} /> */}
-      {/* <Button variant="contained" onClick={submitHandler} color="primary">
-        Add todo
-      </Button> */}
       <Paper style={{ marginTop: 16, marginBottom: 16, padding: 16 }}>
         <Grid container>
           <Grid md={10} item style={{ paddingRight: 16 }}>

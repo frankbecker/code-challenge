@@ -1,13 +1,13 @@
 import "./App.scss";
 import React from 'react';
-import Notifications from "./components/notifications/notification";
-import { RootStateOrAny, useSelector } from "react-redux";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import { makeStyles } from '@material-ui/core/styles';
-import { AppBar, Toolbar, Typography, Container, IconButton, Menu, MenuItem, Paper } from '@material-ui/core';
+import { AppBar, Toolbar, Typography, Container, IconButton, Menu, MenuItem } from '@material-ui/core';
 import MenuIcon from '@material-ui/icons/Menu';
 
 import TodoPageComp from "./pages/todos-page";
+import HomePageComp from "./pages/home-page";
+import AboutPageComp from "./pages/about-page";
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -22,7 +22,6 @@ const useStyles = makeStyles((theme) => ({
 }));
 
 function App() {
-  const notes = useSelector((state: RootStateOrAny) => state.ui.notifications);
   const classes = useStyles();
 
   const [anchorEl, setAnchorEl] = React.useState(null);
@@ -63,20 +62,16 @@ function App() {
         </div>
         <div className="App">
           <Switch>
-            <Route path="/about">This is about</Route>
+            <Route path="/about">
+              <AboutPageComp />
+            </Route>
             <Route path="/todos">
               <TodoPageComp />
             </Route>
             <Route path="/">
-              <p>Welcome to home!</p>
+              <HomePageComp />
             </Route>
           </Switch>
-
-          <Notifications
-            title={notes.title}
-            message={notes.message}
-            status={notes.status}
-          />
         </div>
       </Router>
     </Container>
