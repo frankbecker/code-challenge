@@ -46,42 +46,6 @@ const TodoComp = (props: Props) => {
     setTodotitle("");
   };
 
-  // return (
-  //   <li>
-  //     <span>
-  //       {edit ? (
-  //         <input type="text" value={todotitle} onChange={handleChange} />
-  //       ) : (
-  //         props.todo.title
-  //       )}
-  //     </span>
-  //     <span>
-  //       <input
-  //         type="checkbox"
-  //         checked={props.todo.completed}
-  //         onChange={completeHandler}
-  //       />
-  //     </span>
-  //     <span>
-  //       {edit ? (
-  //         <>
-  //           <button onClick={updateHandler}>Update</button>
-  //           <button
-  //             onClick={() => {
-  //               setEdit(false);
-  //             }}
-  //           >
-  //             Cancel
-  //           </button>
-  //         </>
-  //       ) : (
-  //         <button onClick={editHandler}>Edit</button>
-  //       )}{" "}
-  //       <button onClick={deleteHandler}>X</button>
-  //     </span>
-  //   </li>
-  // );  
-
   return (
     <ListItem divider={true}>
       <Checkbox checked={props.todo.completed} onChange={completeHandler} disableRipple />

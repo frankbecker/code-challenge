@@ -2,7 +2,6 @@ import { List, Paper } from "@material-ui/core";
 
 import { ITodo } from "../../types";
 import TodoComp from "../todo";
-//import "./todolist.scss";
 
 type TodoListCompProps = {
   todos: ITodo[];
